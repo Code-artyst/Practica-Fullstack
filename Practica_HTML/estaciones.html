@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Puro</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de Estaciones</h1>
+    </header>
+<!-- Lo que hace el label es que relaciona una descripcion a un campo donde se ingresan datos --> 
+    
+    <hr style="width: 70%; margin-left: 0; color: rgb(248, 248, 248);">
+    <form style="height: 60px; justify-content: center;">
+        <table style= "width: 50%;">
+            <tr>
+                <td>
+                    <label for="texto">Texto:</label>
+                    <input type="text" id ="texto" name="texto" placeholder="Pinga">
+                </td>
+                <td>
+                    <label for="barrio">Barrio:</label>
+                    <select id="barrio" name="barrio">
+                        <option value="1">San Fernando</option>
+                        <option value="2">Jardin</option>
+                        <option value="1">Allende</option>
+                        <option value="2">Tu mama</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <label for="inactiva">Incluir Inactivas?:</label>
+                <input type="checkbox" id="inactiva">
+                </td>
+                <td>
+                    <button type="submit" id="EnviarForm">Enviar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <hr style="width: 70%; margin-left: 0; color: rgb(248, 248, 248);">
+    <table border style="width: 90%;">
+        <thead>
+            <tr>
+                <th>Nro</th>
+                <th>Nombre</th>
+                <th>Direccion</th>
+                <th>Barrio</th>
+                <th>Activa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12</td>
+                <td>Lucas</td>
+                <td>Carlos Alberto Saes Peña</td>
+                <td>San Fernando</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Lara</td>
+                <td>Carlos Becu</td>
+                <td>Jardin</td>
+                <td>Si</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Benitez</td>
+                <td>Locasa Ezreal</td>
+                <td>Allende</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>64</td>
+                <td>Joaquin</td>
+                <td>LOkita</td>
+                <td>Tu mama</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>543</td>
+                <td>Peter</td>
+                <td>Nanu de las nieves</td>
+                <td>Kueltalas</td>
+                <td>Si</td>
+            </tr>
+            <tr>
+                <td>366</td>
+                <td>Soy un Extremista Argentino</td>
+                <td>Hare estallar una bomba</td>
+                <td>Que saque nieve que mate gente</td>
+                <td>Garron de la gran flauta</td>
+            </tr>
+            <tr>
+                <td>387</td>
+                <td>Soy una Extremista Uruguasha</td>
+                <td>No se como amenazan los uruguashos</td>
+                <td>Bum*</td>
+                <td>Garron de la gran flauta</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

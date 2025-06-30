@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Peliculas</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de Películas Proyectadas</h1>
+    </header>
+    <hr style="margin-left: 0; width: 70%;">
+    <main>
+        <form >
+            <table style="width: 70%;">
+                <tr>
+                    <td>
+                        <label for="texto">Nombre:</label>
+                        <input type="text" id="texto" name="texto" placeholder="Título de la Película">
+                    </td>
+                    <td>
+                        <label for="genero">Género:</label>
+                        <select id="genero" name="genero">
+                            <option value="1">Aventura</option>
+                            <option value="2">Acción</option>
+                            <option value="3">Violencia</option>
+                            <option value="4">Comedia</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="idioma">Idioma:</label>
+                        <select id="idioma" name="idioma">
+                            <option value="1">Castellano</option>
+                            <option value="2">Ingles</option>
+                            <option value="3">Estonio</option>
+                            <option value="4">Portugues</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <label for="subtitulada">Subtitulada:</label>
+                    <input type="checkbox" id="subtitulada" name="subtitulada">
+                    </td>
+                    <td>
+                        <input type="submit" id="boton" value="Filtrar">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    <hr style="margin-left: 0; width: 70%;">
+        <table border="">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Título de la película</th>
+                    <th>Género</th>
+                    <th>Duración</th>
+                    <th>Calificación</th>
+                    <th>Idioma</th>
+                    <th>Subtitulada</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>4</td>
+                    <td>Moana</td>
+                    <td>Aventura</td>
+                    <td>2hs</td>
+                    <td>7/10</td>
+                    <td>Casteñano</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Toy Story 2</td>
+                    <td>Aventura</td>
+                    <td>2:30hs</td>
+                    <td>9.7/10</td>
+                    <td>Ingles</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Depredador</td>
+                    <td>Accion/Violencia</td>
+                    <td>3hs</td>
+                    <td>8.7/10</td>
+                    <td>Estonio</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>Hombres de Negro</td>
+                    <td>Accion/Comedia</td>
+                    <td>1:30hs</td>
+                    <td>9.8/10</td>
+                    <td>Portugues</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Avatar la Leyenda de Ang</td>
+                    <td>Aventura</td>
+                    <td>2hs</td>
+                    <td>9.9/10</td>
+                    <td>Casteñano</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>Pagina Web Diseñada por el Joan <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1" target="_blank">Mi pagina</a></p>
+    </footer>
+</body>
+</html>

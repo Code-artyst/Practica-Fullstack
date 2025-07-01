@@ -11,46 +11,49 @@
     </header>
     <hr style="margin-left: 0; width: 70%;">
     <main>
-        <form >
-            <table style="width: 70%;">
-                <tr>
-                    <td>
-                        <label for="texto">Nombre:</label>
-                        <input type="text" id="texto" name="texto" placeholder="Título de la Película">
-                    </td>
-                    <td>
-                        <label for="genero">Género:</label>
-                        <select id="genero" name="genero">
-                            <option value="1">Aventura</option>
-                            <option value="2">Acción</option>
-                            <option value="3">Violencia</option>
-                            <option value="4">Comedia</option>
-                        </select>
-                    </td>
-                    <td>
-                        <label for="idioma">Idioma:</label>
-                        <select id="idioma" name="idioma">
-                            <option value="1">Castellano</option>
-                            <option value="2">Ingles</option>
-                            <option value="3">Estonio</option>
-                            <option value="4">Portugues</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    <label for="subtitulada">Subtitulada:</label>
-                    <input type="checkbox" id="subtitulada" name="subtitulada">
-                    </td>
-                    <td>
-                        <input type="submit" id="boton" value="Filtrar">
-                    </td>
-                </tr>
+        <fieldset style="width: 70%;">
+            <legend>Filtrar películas</legend>
+            <form >
+                <table style="width: 70%;">
+                    <tr>
+                        <td>
+                            <label for="titulo">Nombre:</label> 
+                            <input type="text" id="titulo" name="titulo" placeholder="Título de la Película">
+                        </td>
+                        <td>
+                            <label for="genero">Género:</label> 
+                            <select id="genero" name="genero">
+                                <option value="1">Aventura</option>
+                                <option value="2">Acción</option>
+                                <option value="3">Violencia</option>
+                                <option value="4">Comedia</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="idioma">Idioma:</label> 
+                            <select id="idioma" name="idioma">
+                                <option value="1">Castellano</option>
+                                <option value="2">Ingles</option>
+                                <option value="3">Estonio</option>
+                                <option value="4">Portugues</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <label for="subtitulada">Subtitulada:</label>
+                        <input type="checkbox" id="subtitulada" name="subtitulada">
+                        </td>
+                        <td>
+                            <input type="submit" id="boton" value="Filtrar">
+                        </td>
+                    </tr>
 
-            </table>
-        </form>
+                </table>
+            </form>
+        </fieldset>
     <hr style="margin-left: 0; width: 70%;">
-        <table border="">
+        <table>
             <thead>
                 <tr>
                     <th>N°</th>

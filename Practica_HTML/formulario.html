@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <fieldset style="height: 244px;">
+        <legend>Formulario</legend>
+        <form action="https://labsys.frc.utn.edu.ar/dds-express/eco" target="#">
+            <table style="width: 90%; height: 140px;">
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre:</label> <br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Daniel Cardozo">
+                    </td>
+                    <td>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Ej: nombre@sistemas.frc.utn.edu.ar">
+                    </td>
+                    <td>
+                        <label for="numero">Numero:</label><br>
+                        <input type="text" id="numero" name="numero" placeholder="Ej: +54 3518930">
+                    </td>
+                    <td>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <input type="text" id="mensaje" name="mensaje" placeholder="Ej: Soy Gei">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="helado">Sabor de Helado Favorito:</label><br>
+                        <select>
+                            <option value="1">Dulce de Leche</option>
+                            <option value="2">Granizado</option>
+                            <option value="3">Tramontana</option>
+                            <option value="4">Banana con Dulce de Leche</option>
+                            <option value="5">Chocolate</option>
+                            <option value="6">Cookis</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="submit" value="Enviar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>

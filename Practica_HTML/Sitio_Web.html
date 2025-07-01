@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <style>
+        header {
+            height: 30px;
+            align-items: end;
+            display: flex;
+        }
+        nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            font-family:sans-serif;
+            color: grey;
+        }
+        main h1, h2 {
+            text-align: center;
+        }
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .footer {
+            height: 60px;
+            align-content: center;
+
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        #cuerpo {
+            height: 800px;
+        }
+        .contenedor {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="margin-left: 80%;">
+            <a href="./index.html">Inicio</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <hr style="color: grey;">
+    <main>
+        <section id="titulo">
+            <article>
+                <h1>Primer Sitio Web</h1>
+            </article>
+        </section>
+        <section id="cuerpo">
+            <article class="contenedor">
+                <div class="texto">
+                <p>Neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit...</p> <br>
+                <p>"Tampoco hay nadie que ame el dolor por sí mismo, que lo busque y quiera tenerlo, simplemente porque es dolor..."</p>
+                </div>
+                <div class="imagen">
+                <img src="Cicerón-02.jpg" width="400" height="500" style="float: right;">
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados <a href="https://google.com" target="_blank">@Pinga</a></p>
+    </footer>
+</body>
+</html>

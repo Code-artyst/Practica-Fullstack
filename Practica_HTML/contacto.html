@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            font-family: sans-serif;
+        }
+
+        header {
+            height: 30px;
+            align-items: end;
+            display: flex;
+        }
+        nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            font-family:sans-serif;
+            color: grey;
+        }
+        .footer {
+            height: 60px;
+            align-content: center;
+
+        }
+        footer p {
+            text-align: center;
+        }
+
+        section {
+            height: 600px;
+                
+        }
+        section h1 {
+            text-align: center;
+        }
+        section article {
+            margin-top: 30px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav style="margin-left: 80%;">
+            <a href="./Sitio_Web.html">Inicio</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <hr style="color: gray; width: 90;">
+    <main>
+        <section>
+            <h1>Contacto</h1>
+            <article id="cuerpo">
+                <form>
+                <label for="correo">Ingrese su correo electónico:</label><br>
+                <input type="email" id="correo" name="correo" placeholder="Ej: nombre@hmail.com"><br>
+                </form>
+            </article>
+            <article>
+                <label for="sugerencia">Ingrese una sugerencia:</label><br>
+                <input type="text" id="sugerencia" name="sugerencia">
+            </article>
+            <article style="margin-top: 0px;">
+                <input type="submit" value="Enviar">
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p style="font-family: 'Times New Roman', Times, serif;">Todos los derechos reservados <a href="https://google.com" target="_blank">@Pinga</a></p>
+    </footer>
 </body>
 </html>

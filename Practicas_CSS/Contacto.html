@@ -1,30 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="estilos.css" rel="stylesheet">
 
-        html, body {
-            width: 100%;
-            height: 600px;
-        }
-        header {
-            background-color: gold;
-        }
-        a {
-            margin-left: 15px;
-            text-decoration: none;
-            color: gray;
-        }
-
-        body {
-            space
-        }
-    </style>
 </head>
+
 <body>
     <header class="navbar">
         <nav>
@@ -33,15 +19,34 @@
             <a href="#">Contacto</a>
         </nav>
     </header>
-    <br>
-    <main class="container"> 
-        <h1 class="h1">Bienvenida</h1>
-        <p class="text-1">Es un placer tener aqui!!</p>
-        <p>En Libra nos complace tener nuevos integrantes en 
-            este hermoso equipo!, sientase libre de preguntar
-            y descubrir, que en Libra, somo mas que una empresa,
-            somos una familia. 
-        </p>
+    <main class="container">
+        <fieldset>
+            <form>
+                <article class="titulo">
+                    <h1>Contacto</h1>
+                </article>
+                    <article class="campos">
+                        <article id="c1">
+                        <label for="nombre">Nombre:</label>
+                        <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                    </article>
+                    
+                    <article id="c2">
+                        <label for="correo">Correo:</label>
+                        <input class="form-control" type="email" name="correo" id="correo" placeholder="Ej: nombre@gmail.com">
+                    </article>
+
+                    <article id="c3">
+                    <label for="mensaje">Mensaje:</label>
+                    <input class="form-control" type="text" name="mensaje" id="mensaje" placeholder="Escribinos algo :D">
+                    </article>
+                </article>
+            </form>
+        </fieldset>
     </main>
+    <footer>
+        <p>Todos los derechos reservados<a href="">@Pinga</a></p>
+    </footer>
 </body>
+
 </html>

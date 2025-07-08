@@ -1,12 +1,12 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    height: 2000px;
     color: white;
 }
 
 body {
-    background-image: url(wp7753575.webp);
+    background-image: url(./imagenes/wp7753575.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -15,7 +15,7 @@ body {
 
 header {
     width: 100%;
-    height: 20%;
+    height: 10%;
     align-content: center;
     backdrop-filter: blur(30px);
     border: hidden;
@@ -31,6 +31,7 @@ header {
     font-size: 20px;
 }
 
+
 .link:hover {
     background-color: white;
     color:black !important;
@@ -41,11 +42,70 @@ main {
     margin-top: 80px;
 }
 
+.Encabezado h1 {
+    font-size: 70px;
+}
 
 .Encabezado img {
-    width: 250px;
-    height: 300px;
+    width: 380px;
+    height: 390px;
     object-fit: cover;
     border-radius: 10%;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.575);
+}
+
+
+#foto_fila, .Pie_form, #Pie_Datos {
+    display: flex;
+    gap: 30px;
+}
+
+.Pie div {
+    width: 100%;
+
+}
+
+#Pie_Datos {
+    margin: 0;
+}
+
+#Datos {
+    width: 100%;
+    padding-top: 20px;
+}
+
+article div {
+    margin-top: 30px;
+}
+
+label {
+    font-size: 30px;
+    display: block;
+}
+
+#editar {
+    object-fit:cover;
+    width: 30px;
+    height: 30px;
+}
+
+#Titulo {
+    display: flex;
+}
+
+input {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.411);
+    height: 50px;
+}
+
+.Medio {
+    margin-top: 25px;
+}
+
+footer {
+    margin-top: 200px;
+}
+
+footer p {
+    text-align: center;
 }

@@ -9,9 +9,9 @@
 </head>
 <body>
     <header class="sticky-top">
-        <nav class="navbar d-flex">
+        <nav class="navbar">
         <a class="nav-link link" href="#">Inicio</a>
-        <a class="nav-link link" href="#">Alquileres</a>
+        <a class="nav-link link" href="alquileres.html">Alquileres</a>
         <a class="nav-link link" href="#">Estaciones</a>
         <a class="nav-link link" href="#">Mis Datos</a>
       </div>
@@ -20,37 +20,77 @@
     </header>
 
     <main class="container">
+        <form method="post" >
         <article class="Encabezado">
+            <div id="Titulo">
             <h1>Mi Perfil</h1>
-            <img src="Untitled.jpeg">
-            <div class="Datos">
-                <div id="Nombre">
-
-                </div>
-                <div id="Apellido">
-
+    
+            </div>
+            <div id="foto_fila">
+                <img src="./imagenes/El_Dabo_Cneize.jpeg">
+                <div id="Datos">
+                    <div id="Nombre">
+                        <label for="nombre">Nombre</label>
+                        <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ej: Juan">
+                    </div>
+                    <div id="Apellido">
+                        <label for="apellido">Apellido</label>
+                        <input class="form-control" type="text" id="apellido" name="apellido" placeholder="Ej: Cardozo">
+                    </div>
                 </div>
             </div>
         </article>
-
         <article class="Medio">
             <div id="Correo">
-
+                <label for="correo">Correo</label>
+                <input class="form-control" type="email" id="correo" name="correo" placeholder="Ej:   juan.cardozo@gmail.com">
             </div>
             <div id="Nacimiento">
-
+                <label for="nacimiento">Nacimiento</label>
+                <input class="form-control" type="date" id="nacimiento" name="nacimiento">
             </div>
             <div id="telefono">
-
+                <label for="telefono">Telefono</label>
+                <input class="form-control" type="tel" id="telefono" name="telefono" placeholder="Ej: +54 351-6578930">
             </div>
         </article>
+        </form>
 
         <article class="Pie">
+            <form method="get" class="Pie_form">
+                <div id="Pie_1">
+                    <div id="Pie_Nombre">
+                        <label for="nombre">Nombre</label>
+                        <input class="form-control" type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div id="Pie_Correo">
+                        <label for="correo">Correo</label>
+                <input class="form-control" type="email" id="correo" name="correo" required>
 
+                    </div> 
+                </div>
+                <div id="Pie_2">
+                    <div id="Apellido">
+                        <label for="apellido">Apellido</label>
+                        <input class="form-control" type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div id="Pie_Datos">
+                        <div id="Pie_Nac">
+                            <label for="nacimiento">Nacimiento</label>
+                            <input class="form-control" type="date" id="nacimiento" name="nacimiento" required>
+                        </div>
+                        <div id="Pie_Tel">
+                            <label for="telefono">Telefono</label>
+                <input class="form-control" type="tel" id="telefono" name="telefono" required>
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
         </article>
     </main>
 
-    <footer></footer>
+    <footer class="container"><p>Todos los derechos reservados <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">@Pinga</a></p></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

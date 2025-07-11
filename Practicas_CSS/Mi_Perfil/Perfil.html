@@ -10,7 +10,7 @@
 <body>
     <header class="sticky-top">
         <nav class="navbar">
-        <a class="nav-link link" href="#">Inicio</a>
+        <a class="nav-link link" href="inicio.html">Inicio</a>
         <a class="nav-link link" href="alquileres.html">Alquileres</a>
         <a class="nav-link link" href="estaciones.html">Estaciones</a>
         <a class="nav-link link" href="#">Mis Datos</a>
@@ -18,14 +18,16 @@
     </header>
 
     <main class="container">
-        <form method="post" >
+        <form>
         <article class="Encabezado">
             <div id="Titulo">
-            <h1>Mi Perfil</h1>
-    
+                <h1>Mi Perfil</h1>
+                <button style="border-radius: 15px; width: 80px;">
+                    <img src="./imagenes/pen-fill.svg" width="40" height="40">
+                </button>
             </div>
             <div id="foto_fila">
-                <img src="./imagenes/El_Dabo_Cneize.jpeg">
+                <img id="foto" src="./imagenes/El_Dabo_Cneize.jpeg">
                 <div id="Datos">
                     <div id="Nombre">
                         <label for="nombre">Nombre</label>

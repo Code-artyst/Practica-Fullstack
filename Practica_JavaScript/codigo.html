@@ -11,6 +11,8 @@
 const uno = "Ge"
 const dos = "i"
 const tres = uno + dos
+const variable = 1
+
 console.log("La segunda letra de \"Hola\" es la letra \"" + palabra[1] + "\"");
 console.log(`La palabra \"Hola\"
     tiene ` + palabra.length + " letras!");
@@ -22,6 +24,106 @@ if (tres.length >= 4) {
 else {
     console.log(`Usted tiene 0 pingas`)
 }
+
+switch (variable) {
+    case 1:
+        console.log(`Usted tiene ademas de 0 pingas 0 biches :,c`)
+    break;
+    default:
+        console.log(`Usted si tiene varias pingas y muchas biches :D`)
+    }
+const color = "rojo"
+switch (color) {
+    case "rojo":
+    console.log("#FF0000");
+    break;
+    case "azul":
+    console.log("#0000FF");
+
+    }
+const lucas = "hetero"
+const marcos = "homo"
+let juan = "chad"
+console.log(
+    "Lucas es",
+    lucas === "gei" ? "tremendo trolaso" : "completamente CHAD B)"
+);
+
+for (let indice = 0; indice < lucas.length; indice++) {
+    indice % 2 != 0 ?
+    console.log(`Tu numero de la suerte es ${indice}`) : null;
+
+    indice % 2 === 0 && console.log(`Tenes en total ${indice} pingas`)
+    console.log(lucas[indice])
+}
+let i = 0;
+/*    
+    while (i < 2) {
+        i === 0 && console.log(typeof lucas)
+        i === 1 && console.log(typeof (lucas.split())) 
+        console.log(`------------------------------------------------------`)
+        i++
+        console.log(lucas.split(""))
+    }
+*/
+
+const mod = function (cadena, caracter, posicion) {
+    const cad = cadena.split("")
+    const car = caracter
+    const pos = posicion
+    cad[pos] = car
+    let nueva_cad = ""
+    for (let i = 0; i < cad.length; i++) {
+        nueva_cad += cad[i] 
+    }
+    return nueva_cad
+}
+
+juan = mod(juan, "t", 3)
+console.log(juan)
+
+do {
+    i++;
+    console.log(i++);
+} while (i < 10);
+
+let a = 2.2
+let b = "3"
+console.log(a + Number(b))
+
+let año = 1924
+es_bisiesto(año)
+function es_bisiesto(año) {
+    if (año % 4 === 0 && ( año % 100 !== 0 || año % 400 === 0)){
+        console.log(`${año} es un año bisiesto!`)
+    } else {
+        console.log(`${año} no es un año Bisiesto!`)
+    }
+}
+
+
+function caja(cadena) {
+    let cad = cadena.split(" ")
+    let palabra = ""
+    for (let i = 0; i < cad.length; i++) {
+        (cad[i].length >= palabra.length) && (palabra = cad[i]);
+    }
+   i = 0
+   let cont = cad.length - 1 
+    while (i < cad.length) {
+        if (i == 0) {
+            console.log(`${"*".repeat(4 + palabra.length)}`)
+        }
+       
+        console.log(`* ${cad[i]} ${" ".repeat(palabra.length - cad[i].length)}*`) 
+        i == cont && console.log(`${"*".repeat(4 + palabra.length)}`)
+        
+        i++ 
+    }
+}
+let cadena = prompt("Ingrese una cadena de caracteres: ")
+caja(cadena) 
+
 
     </script>
 </body>

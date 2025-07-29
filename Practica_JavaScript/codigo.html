@@ -101,7 +101,6 @@ function es_bisiesto(año) {
     }
 }
 
-
 function caja(cadena) {
     let cad = cadena.split(" ")
     let palabra = ""
@@ -109,22 +108,21 @@ function caja(cadena) {
         (cad[i].length >= palabra.length) && (palabra = cad[i]);
     }
    i = 0
+   salida = ""
    let cont = cad.length - 1 
     while (i < cad.length) {
-        if (i == 0) {
-            console.log(`${"*".repeat(4 + palabra.length)}`)
-        }
+        i == 0 && (salida += `${"*".repeat(4 + palabra.length)}\n`)
        
-        console.log(`* ${cad[i]} ${" ".repeat(palabra.length - cad[i].length)}*`) 
-        i == cont && console.log(`${"*".repeat(4 + palabra.length)}`)
+        salida += `* ${cad[i]} ${" ".repeat(palabra.length - cad[i].length)}*\n` 
+        i == cont && (salida += `${"*".repeat(4 + palabra.length)}`)
         
         i++ 
     }
+    console.log(salida)
 }
 let cadena = prompt("Ingrese una cadena de caracteres: ")
 caja(cadena) 
-
-
+    
     </script>
 </body>
 </html>

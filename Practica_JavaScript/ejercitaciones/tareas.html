@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tareas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: red;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #f8f9fa;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .delete-btn {
+      background: #dc3545;
+      border: none;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .delete-btn:hover {
+      background: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tareas</h1>
+    <form id="formulario-tarea">
+      <input type="text" id="entrada-tarea" placeholder="Escribe una tarea..." required />
+      <button type="submit">Agregar</button>
+    </form>
+    <ul id="lista-tareas"></ul>
+  </div>
+
+  <script>
+    const form = document.getElementById('formulario-tarea');
+    const input = document.getElementById('entrada-tarea');
+    const list = document.getElementById('lista-tareas');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const texto = input.value.trim();
+     // if (texto === '') return; 
+
+      const li = document.createElement('li');
+      li.textContent = texto;
+
+      const borrar = document.createElement('button');
+      borrar.textContent = 'Eliminar';
+      borrar.className = 'delete-btn';
+      borrar.addEventListener('click', () => {
+        li.remove();
+      });
+
+      li.appendChild(borrar);
+      list.appendChild(li);
+      
+    });
+  </script>
+  </script>
+</body>
+</html>

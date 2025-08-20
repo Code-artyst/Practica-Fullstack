@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lista de Tareas</title>
+  
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f0f2f5;
+      background: #f7f7f7;
       display: flex;
       justify-content: center;
       padding: 40px;
+
     }
 
     .container {
@@ -50,7 +52,7 @@
     }
 
     button:hover {
-      background: red;
+      background: #208838ff;
     }
 
     ul {
@@ -68,7 +70,7 @@
       align-items: center;
     }
 
-    .delete-btn {
+    .boton-borrar {
       background: #dc3545;
       border: none;
       color: white;
@@ -77,46 +79,48 @@
       cursor: pointer;
     }
 
-    .delete-btn:hover {
-      background: #c82333;
+    .boton-borrar:hover {
+      background: #8f1919;
     }
   </style>
+  
 </head>
-<body>
+<body id="body">
   <div class="container">
     <h1>Lista de Tareas</h1>
     <form id="formulario-tarea">
-      <input type="text" id="entrada-tarea" placeholder="Escribe una tarea..." />
+      <input type="text" id="entrada-tarea" placeholder="Escribe una tarea..."/>
       <button type="submit">Agregar</button>
     </form>
     <ul id="lista-tareas"></ul>
   </div>
 
   <script>
-    const form = document.getElementById('formulario-tarea');
-    const input = document.getElementById('entrada-tarea');
-    const list = document.getElementById('lista-tareas');
+    document.getElementById("formulario-tarea").addEventListener('submit', function(e) {
+        e.preventDefault();
+        const contenedor = document.createElement('div');
+        contenedor.className = "container";
+        const h1 = document.createElement('h1');
+        h1.textContent = "Lista de Tareas";
+        const form = document.createElement('form');
+        form.id = "formulario-tarea";
+        const input = document.createElement('input');
+        input.type = "text";
+        input.id = "entrada-tarea";
+        input.placeholder = "Escribe una tarea...";
+        const button = document.createElement('button');
+        button.type = "submit";
+        button.textContent = "Agregar";
+        form.appendChild(input);
+        form.appendChild(button);
+        contenedor.appendChild(h1);
+        contenedor.appendChild(form);
+        document.getElementById("body").appendChild(contenedor)
 
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const texto = input.value.trim();
-      if (texto === '') return; 
-
-      const li = document.createElement('li');
-      li.textContent = texto;
-
-      const borrar = document.createElement('button');
-      borrar.textContent = 'Eliminar';
-      borrar.className = 'delete-btn';
-      borrar.addEventListener('click', () => {
-        li.remove();
-      });
-
-      li.appendChild(borrar);
-      list.appendChild(li);
-      
-    });
-  </script>
+      }
+    
+    
+    )
   </script>
 </body>
 </html>

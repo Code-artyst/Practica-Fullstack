@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+
+    <script src="./tabla.js"></script>
+
+    <style>
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        section {
+            width: 90%;
+        }
+        .contenedor {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            
+        }
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Lista de Estaciones</h1>
+        <hr>
+        <form id="formulario">
+        <div class="contenedor">
+            <div class="sub-contenedor">
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Nombre a filtrar" id="nombre" name="nombre" required>
+            </div>
+            <div class="sub-contenedor">
+                <label for="barrio">Barrio:</label>
+                <select name="barrio" id="barrio">
+                    <option>Ninguno</option>
+                    <option>San Fernando</option>
+                    <option>Villa San Isidro</option>
+                    <option>Nueva Cordoba</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="contenedor">
+            <div>
+            <input type="checkbox" id="inactivo" name="inactivo">
+            <label for="inactivo">Incluir Inactivos</label>
+            </div>
+            <button type="submit">Filtrar</button>
+        </div>
+        </form>
+        <hr>
+        <table border="1" id="tabla">
+            <thead>
+            <tr>
+                <th>Nro</th>
+                <th>Nombre</th>
+                <th>Direccion</th>
+                <th>Barrio</th>
+                <th>Activo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>TuPack</td>
+                <td>Que te importa</td>
+                <td>Nueva Cordoba</td>
+                <td>Si</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Eli</td>
+                <td>Cataratas</td>
+                <td>Villa San Isidro</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Chinito</td>
+                <td>China</td>
+                <td>San Fernando</td>
+                <td>Si</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>    
+</html>

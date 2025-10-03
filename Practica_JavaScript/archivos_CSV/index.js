@@ -1,5 +1,5 @@
-let nombre = "juan";
-const promesa = new Promise( (resolve, reject) => {
+let nombre = "pedro";
+const promesa = new Promise((resolve, reject) => {
     if (nombre === "juan"){
         resolve(`${nombre}!! Eres justo la persona que necesitamos!`)
     }else {
@@ -9,9 +9,13 @@ const promesa = new Promise( (resolve, reject) => {
 
 
 
-
-
-
 });
 
+
+(function main() {
+    promesa
+        .then(valor => {console.log(valor)})
+        //.catch(error => console.log(error))
+
+})()
 
